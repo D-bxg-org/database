@@ -28,17 +28,23 @@ oracle作为重量级数据库，其中的PL/SQL是在MySQL中没有的，所以
 
 ### 5.3 OS（操作系统）
 
-笔者当前是win7，但据说快不支持了（2020年12月29日19:29:37），因此即将升级成win10。也在虚拟机中安装过oracle，虚拟机使用的是Ubuntu64位。
+笔者当前是win7，但据说快不支持了（2020年12月29日19:29:37），因此即将升级成win10。
+
+也在虚拟机中安装过oracle，虚拟机使用的是Ubuntu64位。
 
 ### 5.4 Plug-in（开发中使用到的插件）
 
-无
+在虚拟机中使用了docker。
 
 ### 5.5 Soft（用到的软件）
 
 navicat
 
+VMware
+
 ## 6 参考文献
 
 教材书：[https://book.douban.com/subject/34864633/](https://book.douban.com/subject/34864633/)
+
+易百教程：[https://www.yiibai.com/oracle/oracle-create-table.html](https://www.yiibai.com/oracle/oracle-create-table.html)
 

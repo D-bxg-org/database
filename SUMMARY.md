@@ -5,6 +5,7 @@
   * [安装与卸载](oracle-1/untitled.md)
   * [体系结构](oracle-1/ti-xi-jie-gou.md)
   * [SQL基础](oracle-1/sql-ji-chu/README.md)
+    * [基础](oracle-1/sql-ji-chu/ji-chu.md)
     * [DDL](oracle-1/sql-ji-chu/ddl.md)
     * [DML](oracle-1/sql-ji-chu/dml.md)
     * [DQL](oracle-1/sql-ji-chu/dql.md)
