@@ -40,7 +40,11 @@ CHECK()
 
 ### 2.1 查询条件
 
-写在where后
+写在where后。
+
+between and是闭区间，也就是说包含两个端点的数。
+
+> 参考：[https://blog.csdn.net/itmyhome1990/article/details/73333896](https://blog.csdn.net/itmyhome1990/article/details/73333896)
 
 | 查询条件 | 谓词 |
 | :--- | :--- |

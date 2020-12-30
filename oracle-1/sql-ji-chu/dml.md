@@ -8,6 +8,8 @@ description: 数据操纵语言（data manipulate language）
 
 oracle不支持一次性插入多条数据。
 
+> 参考：[https://blog.csdn.net/gnail\_oug/article/details/80005957](https://blog.csdn.net/gnail_oug/article/details/80005957)
+
 习惯在values和一条记录间加空格，因为他们本身是在一行的。
 
 {% tabs %}

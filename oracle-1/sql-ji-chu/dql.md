@@ -7,13 +7,11 @@ description: 数据查询语言（data query language）
 ## 0 查询的一般形式
 
 ```sql
-SELECT [ALL|DISTINCT] 
-FROM
-WHERE
-GROUP BY
-    HAVING
-ORDER BY
-    [ASC|DESC]
+SELECT [ALL|DISTINCT] <列名1 [新列名]>[,<列名2>,<列名3>]
+FROM <表名>
+WHERE <条件表达式>
+GROUP BY <列名> HAVING <组条件表达式>
+ORDER BY <列名> [ASC|DESC]
 ```
 
 ## 1 单表查询
