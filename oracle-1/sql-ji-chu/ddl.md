@@ -21,6 +21,10 @@ description: 数据定义语言（data definition language）
 
 语句结束是分号。
 
+oracle不区分大小写。但如果使用了字符串，则需要区分，因为“Age”和“AGE”是不同的。
+
+下面三张表符合第三范式。
+
 {% tabs %}
 {% tab title="创建学生表" %}
 ```sql
@@ -60,5 +64,25 @@ CREATE TABLE T_STUDENT_COURSE(
 {% endtab %}
 {% endtabs %}
 
+## 3 修改表
 
+```sql
+--加一个属性
+ALTER TABLE T_STUDENT ADD Height INT;
+--修改属性的数据类型
+ALTER TABLE T_STUDENT MODIFY Height REAL;
+--加检查约束
+ALTER TABLE T_STUDENT ADD CONSTRAINT Chk1 CHECK(Height>140);
+--删除约束
+ALTER TABLE T_STUDENT DROP CONSTRAINT Chk1;
+--删除属性
+ALTER TABLE T_STUDENT DROP COLUMN Height;
+```
+
+## 4 删除表
+
+```sql
+/*加了cascade constraints后，会把相关依赖对象一并删除*/
+DROP TABLE T_STUDENT [CASCADE CONSTRAINTS];
+```
 
