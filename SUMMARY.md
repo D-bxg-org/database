@@ -10,7 +10,9 @@
     * [DML](oracle/sql-ji-chu/dml.md)
     * [DQL](oracle/sql-ji-chu/dql.md)
     * [DCL](oracle/sql-ji-chu/dcl.md)
-  * [PL/SQL概述](oracle/plsql-gai-shu.md)
+  * [PL/SQL概述](oracle/plsql-gai-shu/README.md)
+    * [基础](oracle/plsql-gai-shu/ji-chu.md)
+    * [设计简介](oracle/plsql-gai-shu/she-ji-jian-jie.md)
 
 ## oracle <a id="t-oracle"></a>
 
