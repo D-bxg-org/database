@@ -55,6 +55,17 @@ between and是闭区间，也就是说包含两个端点的数。
 | 空值 | is null |
 | 多重条件 | and, or |
 
+字符匹配：
+
+```sql
+WHERE SNAME LIKE '<匹配串>' [ESCAPE '<换码字符>']
+
+--匹配串格式
+'张%'--张三，张四，张五六
+'_七%'--张七，陈七，陈七八
+'jsq\_%g_' ESCAPE '\'--jsq_几个字g符，jsp_design
+```
+
 ### 2.2 聚组函数
 
 写在select后
