@@ -4,6 +4,18 @@
 
 ### 1.1 数据类型
 
+date数据类型可以使用一些函数
+
+> 参考：[https://www.cnblogs.com/ajian/archive/2009/03/25/1421063.html](https://www.cnblogs.com/ajian/archive/2009/03/25/1421063.html)
+>
+> select to\_char\(sysdate,'yyyy-mm-dd hh24:mi:ss'\) as nowTime from dual; //日期转化为字符串  
+> select to\_char\(sysdate,'yyyy'\) as nowYear from dual; //获取时间的年  
+> select to\_char\(sysdate,'mm'\) as nowMonth from dual; //获取时间的月  
+> select to\_char\(sysdate,'dd'\) as nowDay from dual; //获取时间的日  
+> select to\_char\(sysdate,'hh24'\) as nowHour from dual; //获取时间的时  
+> select to\_char\(sysdate,'mi'\) as nowMinute from dual; //获取时间的分  
+> select to\_char\(sysdate,'ss'\) as nowSecond from dual; //获取时间的秒
+
 ```sql
 --数值型
 INT

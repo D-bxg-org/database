@@ -13,6 +13,8 @@
   * [PL/SQL概述](oracle/plsql-gai-shu/README.md)
     * [基础](oracle/plsql-gai-shu/ji-chu.md)
     * [设计简介](oracle/plsql-gai-shu/she-ji-jian-jie.md)
+    * [判断](oracle/plsql-gai-shu/pan-duan.md)
+    * [循环](oracle/plsql-gai-shu/xun-huan.md)
 
 ## oracle <a id="t-oracle"></a>
 
