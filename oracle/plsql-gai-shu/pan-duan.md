@@ -24,7 +24,7 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('此同学的平均成绩是'||v_grade||'，一等奖学金');
     ELSIF v_grade > 75 THEN
         DBMS_OUTPUT.PUT_LINE('此同学的平均成绩是'||v_grade||'，二等奖学金');
-    ELSIF
+    ELSE
         DBMS_OUTPUT.PUT_LINE('此同学的平均成绩是'||v_grade||'，三等奖学金');
     END IF;
 END;

@@ -10,6 +10,11 @@ BEGIN
 EXCEPTION
 
 END
+-------------
+一个对象的属性
+CURSOR%ISOPEN
+一个对象的方法
+DBMS_OUTPUT.PUT_LINE()
 ```
 
 ```java
@@ -24,6 +29,11 @@ class Sql{
         }
     }
 }
+/**************************************/
+一个对象的属性
+sql.value
+一个对象的方法
+sql.fun()
 ```
 
 ```sql

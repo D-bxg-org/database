@@ -15,6 +15,8 @@
     * [设计简介](oracle/plsql-gai-shu/she-ji-jian-jie.md)
     * [判断](oracle/plsql-gai-shu/pan-duan.md)
     * [循环](oracle/plsql-gai-shu/xun-huan.md)
+    * [异常处理](oracle/plsql-gai-shu/yi-chang-chu-li.md)
+    * [游标](oracle/plsql-gai-shu/you-biao.md)
 
 ## oracle <a id="t-oracle"></a>
 
