@@ -3,7 +3,7 @@
 ## 0 游标的用处
 
 * 首先，我们把select查询出来的结果，作为一张新的表。属性是select中查询的字段，记录是select一共查出来的记录结果。
-* 然后我们用游标，截取这张新表中的一部分连续的记录。
+* 然后我们用游标，截取这张新表中的一部分连续的记录，并存储到一个记录变量中去（XXX\_record）。
 * 这就是游标的用处。
 
 ## 1 基本写法（显式游标）
@@ -12,12 +12,13 @@
 
 游标的数据类型，应该和**查询结果的表**的rowtype一致。
 
-当然，也可以自定义游标的内部：
+当然，也可以自定义游标的内部，定义游标参数是为了传入该值到select语句中去，例如：
 
 ```sql
-游标变量_cursor(v_a NUMBER[,v_b SC%ROWTYPE])
+DECLARE
+    CURSOR 游标变量_cursor(v_a NUMBER) IS SELECT * FROM T_SUTDNET WHERE SNO=v_a;
 
-OPEN 游标变量_cursor(v_a NUMBER[,v_b SC%ROWTYPE])
+OPEN 游标变量_cursor(1)
 
 FETCH 游标变量_cursor INTO v_XXX--注意：此处写游标变量的名称
 
@@ -131,6 +132,48 @@ BEGIN
         --FETCH student_cursor INTO student_record;
     END LOOP;
     --CLOSE student_cursor;
+END;
+```
+
+## 3 操作数据库
+
+我们知道，我们手动写一个语句时，只能达到操作一条记录的目的，而游标可以帮助我们操作多条记录。
+
+```sql
+DECLARE
+    CURSOR student_cursor IS SELECT * FROM T_STUDENT WHERE DEPT='计算机系';
+BEGIN
+    FOR student_record IN student_cursor LOOP
+        DELETE FROM T_STUDENT WHERE CURRENT OF student_cursor;
+    END LOOP;
+END;
+```
+
+## 4 带参游标
+
+```sql
+DECLARE
+    CURSOR student_cursor(v_dept CHAR) IS
+    SELECT SNAME,AGE FROM T_STUDENT WHERE DEPT=v_dept;
+BEGIN
+    FOR student_record IN student_cursor('数学系') LOOP
+        DBMS_OUTPUT.PUT_LINE(student_record.SNAME||student_record.AGE);
+    END LOOP;
+END;
+```
+
+## 5 隐式游标
+
+隐式游标都写成SQL
+
+```sql
+BEGIN
+    DELETE FROM T_STUDENT WHERE DEPT=&P_DEPT;
+    IF SQL%NOTFOUND THEN
+        DBMS_OUTPUT.PUT_LINE('失败');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('成功');
+    END IF;
 END;
 ```
 

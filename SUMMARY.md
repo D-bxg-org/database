@@ -17,6 +17,9 @@
     * [循环](oracle/plsql-gai-shu/xun-huan.md)
     * [异常处理](oracle/plsql-gai-shu/yi-chang-chu-li.md)
     * [游标](oracle/plsql-gai-shu/you-biao.md)
+    * [存储子程序](oracle/plsql-gai-shu/cun-chu-zi-cheng-xu.md)
+    * [包](oracle/plsql-gai-shu/bao.md)
+    * [触发器](oracle/plsql-gai-shu/chu-fa-qi.md)
 
 ## oracle <a id="t-oracle"></a>
 
